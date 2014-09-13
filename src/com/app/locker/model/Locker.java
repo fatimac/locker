@@ -9,11 +9,16 @@ public class Locker {
 	public static final String WEBSITE_NAME = "website_name";
 	public static final String WEBSITE_URL = "website_url";
 
+	private int lockerId;
 	private String username;
 	private String emailAddress;
 	private String password;
 	private String websiteName;
 	private String websiteUrl;
+
+	public Locker() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public Locker(String username, String emailAddress, String password,
 			String websiteName, String websiteUrl) {
@@ -23,6 +28,14 @@ public class Locker {
 		this.password = password;
 		this.websiteName = websiteName;
 		this.websiteUrl = websiteUrl;
+	}
+
+	public int getLockerId() {
+		return lockerId;
+	}
+
+	public void setLockerId(int lockerId) {
+		this.lockerId = lockerId;
 	}
 
 	public String getUsername() {
